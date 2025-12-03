@@ -9,4 +9,6 @@ def get_character_count(text):
 
     sorted_dict = dict(sorted(char_count.items(), key=lambda x: x[1], reverse=True))
     
-    return list(sorted_dict.keys())[1]
+    final_answer = f"The most appearing character is {list(sorted_dict.keys())[0]} and it appears {list(sorted_dict.values())[0]} times"
+
+    return list(sorted_dict.keys())[0]
